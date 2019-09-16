@@ -1,5 +1,7 @@
 # doc3D
-Doc3D is the first 3D dataset focused on document unwarping, it contains 100k images with the following ground-truths:
+![alt text](ren-p.jpg)
+
+Doc3D is the first 3D dataset focused on document unwarping. It contains 100k images with the following ground-truths:
 - 3D Coordinates
 - Depth 
 - UV
