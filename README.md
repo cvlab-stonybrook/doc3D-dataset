@@ -23,6 +23,8 @@ This repository contains all the necessary bash scripts to download the dataset-
 
 ### Release Updates:
 - **Sep 16,2019:** v0.5 (36K images, no depth map) 
+- **Upcoming:** v0.5.1 (Depth maps for v0.5 images)
+- Rest of the images (with ground-truths), meshes and, our rendering code will be available soon!
 
 ### Citation:
 If you use the dataset, please consider citing our work-
