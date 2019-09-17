@@ -1,3 +1,4 @@
+
 # doc3D
 Doc3D is the first 3D dataset focused on document unwarping with realistic paper warping and renderings.
 <p align="center">
@@ -26,10 +27,18 @@ This repository contains all the necessary bash scripts to download the dataset-
 - Already downloaded files will be skipped and partially downloaded files will be resumed.
 - The scripts are tested on Linux and Mac. For windows, a bash shell [[heads-up](https://itsfoss.com/install-bash-on-windows/)] should work.
 
+### Visualize Data:
+Run the `demo.py` file to display a random image and corresponding ground-truths. `demo.py` takes the following flags-	
+- `--data_root` : Path to the doc3d dataset.
+- `--folder` : Specific folder to load image from.
+- `--download_sample` : If you want to download some samples and run `demo.py` on it. useful if you want to visualize it before downloading the entire data.
+- `--unwarp` : Unwarp input image using the ground-truth backward mapping. 
+
+
 ### Release Updates:
-- **Sep 16,2019:** v0.5 (36K images, no depth map) 
-- **Upcoming:** v0.5.1 (Depth maps for v0.5 images)
-- Rest of the images (with ground-truths), meshes and, our rendering code will be available soon!
+- **Sep 16, 2019:** v0.5 (36K images, no depth map) 
+- **Sep 17, 2019:** v0.5.1 (Depth maps for v0.5 images)
+- **Upcoming:** Rest of the images (with ground-truths), meshes and, our rendering code will be available soon!
 
 ### Citation:
 If you use the dataset, please consider citing our work-
@@ -40,5 +49,5 @@ Booktitle = {Proceedings of International Conference on Computer Vision},
 Title = {DewarpNet: Single-Image Document Unwarping With Stacked 3D and 2D Regression Networks}, 
 Year = {2019}}   
 ```
-##### Acknowlegement: 
+#### Acknowlegement: 
 Bash scripts are adapted from [epic-kitchens-download-scripts](https://github.com/epic-kitchens/download-scripts). 
