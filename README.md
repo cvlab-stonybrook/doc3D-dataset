@@ -1,6 +1,4 @@
 # doc3D
-![Data Creation Pipeline](ren-p.jpg)
-
 <p align="center">
   <img src="data.gif">
 </p>
