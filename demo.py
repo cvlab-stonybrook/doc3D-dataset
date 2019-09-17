@@ -102,19 +102,21 @@ axrr[1][3].title.set_text('checkerboard')
 plt.tight_layout()
 plt.show()
 
-if unwarp:
+
 '''
 Let's use the backward mapping to dewarp the image. 
 You need PyTorch for this part of the code.
 '''
+if args.unwarp:
 	import torch
 	import torch.nn.functional as F
 
 	# scale bm to -1.0 to 1.0
 	bm_ = bm / np.array([448, 448])
+	bm_=(bm_-0.5)*2
 	bm_ = np.reshape(bm_, (1, 448, 448, 2))
 	bm_ = torch.from_numpy(bm_).float()
-	img_ = img.transpose((2, 0, 1))
+	img_ = alb.transpose((2, 0, 1)).astype(np.float32)/255.0
 	img_ = np.expand_dims(img_, 0)
 	img_ = torch.from_numpy(img_)
 	uw = F.grid_sample(img_, bm_)
@@ -122,11 +124,10 @@ You need PyTorch for this part of the code.
 
 	f,axrr=plt.subplots(1,2)
 	for ax in axrr:
-        	for a in ax:
-                	a.set_xticks([])
-                	a.set_yticks([])
-	axrr[0][1].imshow(img)
-	axrr[0][1].title.set_text('input')
-	axrr[0][2].imshow(uw)
-	axrr[0][2].title.set_text('gt-unwarped')
+                a.set_xticks([])
+                a.set_yticks([])
+	axrr[0].imshow(alb)
+	axrr[0].title.set_text('input')
+	axrr[1].imshow(uw)
+	axrr[1].title.set_text('gt-unwarped')
 	plt.show()
