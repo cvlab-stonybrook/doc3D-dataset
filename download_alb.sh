@@ -20,20 +20,20 @@ doc3d_download() {
     local path=$2
     local files=$3
     
-    echo -ne "### Downloading "$files" ###\t\n"
+    echo -ne "\n### Downloading "$files" ###\t\n"
     wget --continue --directory-prefix="$path" "$url" 2>&1
     echo -ne "\b\b\b\b"
     echo " # done"
 }
 
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_1.zip" "$outputPath/" "Albedos"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_2.zip" "$outputPath/" "Albedos"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_3.zip" "$outputPath/" "Albedos"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_4.zip" "$outputPath/" "Albedos"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_5.zip" "$outputPath/" "Albedos"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_6.zip" "$outputPath/" "Albedos"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_7.zip" "$outputPath/" "Albedos"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_8.zip" "$outputPath/" "Albedos"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_1.zip" "$outputPath/" "doc3d/alb_1.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_2.zip" "$outputPath/" "doc3d/alb_2.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_3.zip" "$outputPath/" "doc3d/alb_3.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_4.zip" "$outputPath/" "doc3d/alb_4.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_5.zip" "$outputPath/" "doc3d/alb_5.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_6.zip" "$outputPath/" "doc3d/alb_6.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_7.zip" "$outputPath/" "doc3d/alb_7.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_8.zip" "$outputPath/" "doc3d/alb_8.zip"
 
 echo -e "\n### ------------------------------------------------------- ###\n"
 echo "### Unzipping downloaded files ###"
@@ -54,6 +54,18 @@ echo -e $outputPath"/alb_7.zip .."
 unzip -q $outputPath"/alb_7.zip" -d $outputPath
 echo -e $outputPath"/alb_8.zip .."
 unzip -q $outputPath"/alb_8.zip" -d $outputPath
+
+echo -e "\n### ------------------------------------------------------- ###\n"
+echo "### Cleaning Up ###"
+echo -e "\n### ------------------------------------------------------- ###\n"
+rm $outputPath"doc3d/alb_1.zip" 
+rm $outputPath"doc3d/alb_2.zip" 
+rm $outputPath"doc3d/alb_3.zip"
+rm $outputPath"doc3d/alb_4.zip" 
+rm $outputPath"doc3d/alb_5.zip" 
+rm $outputPath"doc3d/alb_6.zip"
+rm $outputPath"doc3d/alb_7.zip" 
+rm $outputPath"doc3d/alb_8.zip" 
 
 
 echo -e "\n### ------------------------------------------------------- ###\n"

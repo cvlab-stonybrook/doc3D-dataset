@@ -26,14 +26,14 @@ doc3d_download() {
     echo " # done"
 }
 
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_1.zip" "$outputPath/" "Backward Maps"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_2.zip" "$outputPath/" "Backward Maps"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_3.zip" "$outputPath/" "Backward Maps"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_4.zip" "$outputPath/" "Backward Maps"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_5.zip" "$outputPath/" "Backward Maps"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_6.zip" "$outputPath/" "Backward Maps"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_7.zip" "$outputPath/" "Backward Maps"
-doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_8.zip" "$outputPath/" "Backward Maps"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_1.zip" "$outputPath/" "doc3d/bm_1.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_2.zip" "$outputPath/" "doc3d/bm_2.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_3.zip" "$outputPath/" "doc3d/bm_3.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_4.zip" "$outputPath/" "doc3d/bm_4.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_5.zip" "$outputPath/" "doc3d/bm_5.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_6.zip" "$outputPath/" "doc3d/bm_6.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_7.zip" "$outputPath/" "doc3d/bm_7.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/bm_8.zip" "$outputPath/" "doc3d/bm_8.zip"
 
 echo -e "\n### ------------------------------------------------------- ###\n"
 echo "### Unzipping downloaded files ###"
@@ -54,6 +54,19 @@ echo -e $outputPath"/bm_7.zip .."
 unzip -q $outputPath"/bm_7.zip" -d $outputPath
 echo -e $outputPath"/bm_8.zip .."
 unzip -q $outputPath"/bm_8.zip" -d $outputPath
+
+
+echo -e "\n### ------------------------------------------------------- ###\n"
+echo "### Cleaning Up ###"
+echo -e "\n### ------------------------------------------------------- ###\n"
+rm $outputPath"doc3d/bm_1.zip" 
+rm $outputPath"doc3d/bm_2.zip" 
+rm $outputPath"doc3d/bm_3.zip"
+rm $outputPath"doc3d/bm_4.zip" 
+rm $outputPath"doc3d/bm_5.zip" 
+rm $outputPath"doc3d/bm_6.zip"
+rm $outputPath"doc3d/bm_7.zip" 
+rm $outputPath"doc3d/bm_8.zip" 
 
 echo -e "\n### ------------------------------------------------------- ###\n"
 echo "### All done!"
