@@ -25,7 +25,7 @@ This repository contains all the necessary bash scripts to download the dataset-
 **Some Notes:** 
 - A download can be interrupted and resumed later, wget keeps track of it. 
 - Already downloaded files will be skipped and partially downloaded files will be resumed.
-- The scripts are tested on Linux and Mac. For windows, a bash shell [[heads-up](https://itsfoss.com/install-bash-on-windows/)] should work.
+- The scripts are tested on Linux and Mac. For windows, a bash shell [[probably-useful](https://itsfoss.com/install-bash-on-windows/)] should work.
 
 ### Visualize Data:
 Run the `demo.py` file to display a random image and corresponding ground-truths. `demo.py` takes the following flags-	
