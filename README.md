@@ -1,5 +1,9 @@
 # doc3D
-![alt text](ren-p.jpg)
+![Data Creation Pipeline](ren-p.jpg)
+
+<p align="center">
+  <img src="data.gif">
+</p>
 
 Doc3D is the first 3D dataset focused on document unwarping. It contains 100k images with the following ground-truths:
 - 3D Coordinates
