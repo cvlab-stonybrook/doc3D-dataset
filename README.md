@@ -22,6 +22,8 @@ This repository contains all the necessary bash scripts to download the dataset-
 - Individual bash scripts are provided to download a specific part of the data. Following will download all the image files in `<out_dir>/doc3d/img/`- 
     - `bash download_img.sh <out_dir>`
 
+**Rendering codes are available!!**: You can use the scripts [here](https://github.com/sagniklp/doc3D-renderer) to *render your own version of doc3D*.
+
 **Some Notes:** 
 - A download can be interrupted and resumed later, wget keeps track of it. 
 - Already downloaded files will be skipped and partially downloaded files will be resumed.
@@ -38,7 +40,8 @@ Run the `demo.py` file to display a random image and corresponding ground-truths
 ### Release Updates:
 - **Sep 16, 2019:** v0.5 (36K images, no depth map) 
 - **Sep 17, 2019:** v0.5.1 (Depth maps for v0.5 images)
-- **Upcoming:** Rest of the images (with ground-truths), meshes and, our rendering code will be available soon!
+- **Sep 21, 2019:** Rendering code is now available! 
+- **Upcoming:** Rest of the images (with ground-truths)and  meshes will be available soon!
 
 ### Citation:
 If you use the dataset, please consider citing our work-
