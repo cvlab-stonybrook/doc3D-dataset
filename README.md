@@ -54,4 +54,8 @@ Title = {DewarpNet: Single-Image Document Unwarping With Stacked 3D and 2D Regre
 Year = {2019}}   
 ```
 #### Acknowlegement: 
-Bash scripts are adapted from [epic-kitchens-download-scripts](https://github.com/epic-kitchens/download-scripts). 
+- Bash scripts are adapted from [epic-kitchens-download-scripts](https://github.com/epic-kitchens/download-scripts). 
+- Textures are obtained from:
+  - [Yes! Magazine](https://issues.yesmagazine.org/) under Creative Commons Licence.
+  - [CVF Open Access](http://openaccess.thecvf.com/menu.py)
+  - From books available under [Project Gutenberg](https://www.gutenberg.org/) 
