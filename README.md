@@ -1,6 +1,6 @@
 
 # doc3D 
-## ALERT! Due to server issues download won't be available for few days. Apologies for inconvenience!
+## ALERT! Due to server issues download links won't be available for a few days. Apologies for inconvenience!
 Doc3D is the first 3D dataset focused on document unwarping with realistic paper warping and renderings.
 <p align="center">
   <img src="data.gif">
