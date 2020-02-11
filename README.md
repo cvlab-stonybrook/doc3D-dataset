@@ -1,6 +1,5 @@
 
 # doc3D 
-## ALERT! Due to server issues download links won't be available for a few days. Apologies for inconvenience!
 Doc3D is the first 3D dataset focused on document unwarping with realistic paper warping and renderings.
 <p align="center">
   <img src="data.gif">
@@ -16,6 +15,7 @@ It contains 100k images with the following ground-truths:
 - Checkerboard
 
 This repository contains all the necessary bash scripts to download the dataset-
+- To download the dataset you need to obtain a username and password. Please fill out the [Google Form](https://forms.gle/RTfi7LUSrt891VuN8) to request one.
 - To download the entire dataset at once (in the default directory `$HOME/Downloads/doc3d`), use the following command:
     - `bash download_doc3d.sh`
 - To download in a specific directory-

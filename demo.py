@@ -23,7 +23,7 @@ folder=args.folder
 if args.download_sample:
 	f_dir=os.path.join(root,'img','8')
 	folder='8'
-	dwnld_cmd=['wget','--directory-prefix',root,'http://vision.cs.stonybrook.edu/~sagnik/doc3d/demo.zip']
+	dwnld_cmd=['wget','--directory-prefix',root,'http://vision.cs.stonybrook.edu/~sagnik/demo.zip']
 	subprocess.call(dwnld_cmd)
 	unzip_cmd=['unzip','-q',os.path.join(root,'demo.zip'),'-d',root]
 	subprocess.call(unzip_cmd)

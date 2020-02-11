@@ -19,12 +19,15 @@ doc3d_download() {
     local url=$1
     local path=$2
     local files=$3
+    local uname=****        # put your username
+    local pass=****         # put your password
     
-    echo -ne "\n### Downloading "$files" ###\t\n"
-    wget --continue --directory-prefix="$path" "$url" 2>&1
+    echo -ne "### Downloading "$files" ###\t\n"
+    wget --continue --user "$uname" --password "$pass" --directory-prefix="$path" "$url" 2>&1
     echo -ne "\b\b\b\b"
     echo " # done"
 }
+
 
 doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_1.zip" "$outputPath/" "doc3d/alb_1.zip"
 doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/alb_2.zip" "$outputPath/" "doc3d/alb_2.zip"
