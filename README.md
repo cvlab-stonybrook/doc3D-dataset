@@ -44,7 +44,7 @@ Run the `demo.py` file to display a random image and corresponding ground-truths
 - **Sep 17, 2019:** v0.5.1 (Depth maps for v0.5 images)
 - **Sep 21, 2019:** Rendering code is now available! 
 - **Sep 22, 2019:** v0.9 (65K images, no albedos) 
-- **Upcoming:** The meshes (`.obj`) will be available soon!
+- **Mar 11, 2020:** Please send an email to request the meshes (`.obj`)
 
 ### Citation:
 If you use the dataset, please consider citing our work-
