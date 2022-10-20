@@ -102,6 +102,7 @@ doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/uv_5.zip" "$output
 doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/uv_6.zip" "$outputPath/" "doc3d/uv_6.zip"
 doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/uv_7.zip" "$outputPath/" "doc3d/uv_7.zip"
 doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/uv_8.zip" "$outputPath/" "doc3d/uv_8.zip"
+doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/uv_9.zip" "$outputPath/" "doc3d/uv_9.zip"
 doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/uv_10.zip" "$outputPath/" "doc3d/uv_10.zip"
 doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/uv_11.zip" "$outputPath/" "doc3d/uv_11.zip"
 doc3d_download "http://vision.cs.stonybrook.edu/~sagnik/doc3d/uv_12.zip" "$outputPath/" "doc3d/uv_12.zip"
