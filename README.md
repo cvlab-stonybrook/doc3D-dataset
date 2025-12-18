@@ -14,6 +14,12 @@ It contains 100k images with the following ground-truths:
 - Normals
 - Checkerboard
 
+### **Doc3D dataset is now available through HuggingFace**
+- https://huggingface.co/datasets/StonyBrook-CVLab/doc3D-dataset
+- No need to fill the Google Form anymore
+- Please send an email to request the meshes (`.obj`)
+
+### **Download instructions (Will be deprecated by 31st December, 2025)**
 This repository contains all the necessary bash scripts to download the dataset-
 - To download the dataset you need to obtain a username and password. Please fill out the [Google Form](https://forms.gle/RTfi7LUSrt891VuN8) to request one.
 - Update the assigned username password in the download scripts at lines: `local uname=****` `local pass=****`
@@ -24,12 +30,12 @@ This repository contains all the necessary bash scripts to download the dataset-
 - Individual bash scripts are provided to download a specific part of the data. Following will download all the image files in `<out_dir>/doc3d/img/`- 
     - `bash download_img.sh <out_dir>`
 
-**Rendering codes are available!!**: You can use the scripts [here](https://github.com/sagniklp/doc3D-renderer) to *render your own version of doc3D*.
-
 **Some Notes:** 
 - A download can be interrupted and resumed later, wget keeps track of it. 
 - Already downloaded files will be skipped and partially downloaded files will be resumed.
 - The scripts are tested on Linux and Mac. For windows, a bash shell [[probably-useful](https://itsfoss.com/install-bash-on-windows/)] should work.
+  
+**Rendering codes are available!!**: You can use the scripts [here](https://github.com/sagniklp/doc3D-renderer) to *render your own version of doc3D*.
 
 ### Visualize Data:
 Run the `demo.py` file to display a random image and corresponding ground-truths. `demo.py` takes the following flags-	
@@ -45,6 +51,7 @@ Run the `demo.py` file to display a random image and corresponding ground-truths
 - **Sep 21, 2019:** Rendering code is now available! 
 - **Sep 22, 2019:** v0.9 (65K images, no albedos) 
 - **Mar 11, 2020:** Please send an email to request the meshes (`.obj`)
+- **Dec 18, 2025:** Dataset is available in HuggingFace
 
 ### Citation:
 If you use the dataset, please consider citing our work-
