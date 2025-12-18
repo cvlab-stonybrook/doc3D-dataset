@@ -34,6 +34,8 @@ This repository contains all the necessary bash scripts to download the dataset-
 - A download can be interrupted and resumed later, wget keeps track of it. 
 - Already downloaded files will be skipped and partially downloaded files will be resumed.
 - The scripts are tested on Linux and Mac. For windows, a bash shell [[probably-useful](https://itsfoss.com/install-bash-on-windows/)] should work.
+
+**Train and test split**: should be done based on the mesh IDs, follow here: https://github.com/cvlab-stonybrook/doc3D-dataset/issues/8#issuecomment-546566941
   
 **Rendering codes are available!!**: You can use the scripts [here](https://github.com/sagniklp/doc3D-renderer) to *render your own version of doc3D*.
 
